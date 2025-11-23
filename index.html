@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I&E Lab - Universitas Hasanuddin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo-section">
+                <a href="#home" class="logo-text">I&E Laboratory</a>
+            </div>
+            
+            <div class="menu-section">
+                <button id="menuToggle" class="menu-btn" aria-label="Menu" aria-expanded="false">
+                    <span class="icon">&#9776;</span> 
+                </button>
+                <button class="search-btn" aria-label="Search">
+                    <span class="icon">&#9906;</span> 
+                </button>
+            </div>
+            
+            <div class="user-actions">
+                <span class="location-text"><b>Hasanuddin University</b></span>
+                <img src="src/logo_unhas.png" alt="" width="30px">
+            </div>
+        </nav>
+
+        <div id="main-nav-dropdown" class="nav-dropdown">
+            <nav class="dropdown-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#facility">Facility</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <div id="portfolioModal" class="modal-overlay">
+        <div class="modal-content">
+            <h3 class="modal-title">Navigation Confirmation</h3>
+            <p class="modal-text">
+                This link will take you to the Hasanuddin University Faculty website.
+                Do you agree to continue?
+            </p>
+            <div class="modal-actions">
+                <button id="cancelBtn" class="action-btn cancel-btn">Cancel</button>
+                <a href="https://www.unhas.ac.id/faculty/" id="confirmBtn" class="action-btn confirm-btn" target="_blank">
+                    Agree
+                </a>
+            </div>
+        </div>
+    </div>
+
+<main class="main-content">
+    
+    <section id="home" class="award-hero">
+        <div class="award-info-header">
+            <span class="award-title"></span>   
+            
+            <div class="social-interaction">
+                <div class="lab-members-avatars">
+                    <img src="src/avatar1.png" alt="member 1">
+                    <img src="src/avatar2.png" alt="member 2">
+                    <img src="src/avatar3.png" alt="member 3">
+                    <img src="src/avatar4.png" alt="member 4">
+                </div>
+                
+                <a href="members.html" class="interaction-btn collect-btn">Member Info</a>
+            </div>
+        </div>
+        
+        <article class="site-details">
+            <h1 class="site-name">WELCOME</h1>
+            <p class="site-creator">To Instrumentation and Electronics Laboratory Website</p>
+        </article>
+        
+        <div class="hero-actions-bottom">
+            <a href="#about" class="main-action-btn">Let's See</a>
+        </div>
+        
+    </section>
+
+    <section id="about" class="content-section about-section">
+    <div class="container about-container-grid">
+        
+        <div class="content-split visual-split reveal-item left">
+            <div class="about-visual-placeholder">
+                <img src="src/image.png" alt="Foto interior lab modern I&E" class="lab-image">
+            </div>
+            <p class="lab-motto-split">"Praktikum Nyata, Bekal Teori yang Kuat."</p>
+        </div>
+
+        <div class="content-split text-split reveal-item right">
+            <h3 class="section-title">WHY OUR LAB?</h3>
+            <p class="section-subtitle">Pusat Pembelajaran Praktis Elektronika Dasar.</p>
+            
+            <p class="main-paragraph">
+                Laboratorium I&E dirancang sebagai sarana utama bagi mahasiswa untuk mempraktikkan teori Elektronika dan Instrumentasi yang didapatkan di kelas. Kami menyediakan lingkungan belajar yang kondusif, didukung oleh peralatan dasar yang memadai, memastikan setiap mahasiswa memiliki pemahaman fundamental yang kuat melalui <b>hands-on experience</b>.
+            </p>
+            
+            <div class="stats-group">
+                
+                <div class="stat-item reveal-item left delay-1">
+                    <span class="stat-icon">&#x231B;</span> <span class="stat-value">30+</span>
+                    <span class="stat-label">Sesi Praktikum/Semester</span>
+                </div>
+                
+                <div class="stat-item stat-divider reveal-item up delay-2">
+                    <span class="stat-icon">&#x1F4BE;</span> <span class="stat-value">15+</span>
+                    <span class="stat-label">Modul Eksperimen Tersedia</span>
+                </div>
+                
+                <div class="stat-item reveal-item right delay-3">
+                    <span class="stat-icon">&#x2699;</span> <span class="stat-value">100+</span>
+                    <span class="stat-label">Jenis Komponen Elektronik</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+    <section id="research" class="content-section research-section dark-bg">
+    <div class="container">
+        <div class="content-header reveal-item up">
+            <h3 class="section-title">LAB MODULES & CORE FOCUS</h3> 
+            <p class="section-subtitle">Place for Practical Work and Reinforcement of Basic Electronics Theory.</p>
+        </div>
+        
+        <div class="research-grid">
+            
+            <a href="elfis1.html" class="research-card research-dasar reveal-item left delay-1">
+                <span class="card-icon">I</span> 
+                <h4>Praktikum Elektronika Fisis I</h4>
+                <p>Mencakup dasar-dasar rangkaian listrik, hukum Ohm, analisis sirkuit AC/DC, dan pengukuran fundamental.</p>
+                <span class="read-more-link">Lihat Modul &rarr;</span>
+            </a>
+            
+            <a href="elfis2.html" class="research-card research-lanjut reveal-item up delay-2">
+                <span class="card-icon">II</span>
+                <h4>Praktikum Elektronika Fisis II</h4>
+                <p>Fokus pada sirkuit <b>Operasional Amplifier</b> dengan menggunakan Integrated Circuit (IC)</p>
+                <span class="read-more-link">Lihat Modul &rarr;</span>
+            </a>
+            
+            <a href="link_skill_theory.html" class="research-card research-skill reveal-item right delay-3">
+                <span class="card-icon">III</span>
+                <h4>Teori & Pengembangan Skill</h4>
+                <p>Pembelajaran teori semikonduktor, teknik <b>troubleshooting</b>, dan penggunaan simulasi perangkat lunak.</p>
+                <span class="read-more-link">Pelajari Lebih Lanjut &rarr;</span>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <section id="facility" class="content-section facility-section full-image-bg">
+    <div class="container facility-content-wrapper reveal-item up">
+        <h3 class="section-title">OUR FACILITY</h3>
+        <p class="section-subtitle">Berbagai macam alat dan komponen tersedia untuk semua modul praktikum.</p>
+        
+        </div>
+    </section>
+
+    <footer id="footer-contact" class="contact-section dark-bg">
+    <div class="container contact-grid-container">
+        
+        <div class="contact-info-block reveal-item left">
+            <h3 class="section-title">Connect With Us</h3>
+            <p class="section-subtitle">Jelajahi Peluang Praktikum & Kolaborasi.</p>
+            
+            <div class="contact-details">
+                <div class="detail-item">
+                    <p><b>Email:</b> mubaroqa23h@student.unhas.ac.id</p>
+                </div>
+                <div class="detail-item">
+                    <p><b>Phone:</b> +62 821-3590-1047</p>
+                </div>
+                <div class="detail-item">
+                    <address>
+                        <b>Alamat:</b> <br>
+                        Jl. Perintis Kemerdekaan No.KM.10, <br>
+                        Tamalanrea Indah, Kec. Tamalanrea,<br><br>
+                        Laboratorium Elektronika dan Instrumentasi, <br>
+                        Departemen Fisika, <br>
+                        Fakultas MIPA, <br>
+                        Universitas Hasanuddin, <br>
+                        Makassar.
+                         <br>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="social-icons-contact">
+                <a href="https://www.instagram.com/hasanuddin_univ?igsh=MWhtaHN6bmFnaTFsZQ==" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a> 
+                <a href="https://www.youtube.com/@UniversitasHasanuddin" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a> 
+                <a href="https://www.unhas.ac.id/" class="social-link" aria-label="Browser"><i class="fas fa-globe"></i></a> 
+            </div>
+
+        </div>
+
+        <div class="contact-form-block reveal-item right">
+            <div class="map-placeholder">
+                <p class="map-text">VIEW LOCATION ON MAP</p>
+                <a href="https://www.google.com/maps/place/Fakultas+Matematika+dan+Ilmu+Pengetahuan+Alam+UNHAS/@-5.1321655,119.4860499,3a,75y,79.01h,90t/data=!3m10!1e1!3m8!1stnOnsC2SR-7fA5QorRNu9A!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DtnOnsC2SR-7fA5QorRNu9A%26yaw%3D79.01360521781993!7i16384!8i8192!9m2!1b1!2i47!4m14!1m7!3m6!1s0x2dbefb8c3aa414f7:0x59585e28c7ee3ebc!2sFakultas+Matematika+dan+Ilmu+Pengetahuan+Alam+UNHAS!8m2!3d-5.1322425!4d119.4860129!16s%2Fg%2F11g9l_v12x!3m5!1s0x2dbefb8c3aa414f7:0x59585e28c7ee3ebc!8m2!3d-5.1322425!4d119.4860129!16s%2Fg%2F11g9l_v12x?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="main-action-btn map-btn">OPEN MAPS →</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-credit-line container">
+        <p>&copy; 2025 I&E Laboratory - All Rights Reserved. | Site by Kinnzy</p>
+    </div>
+    </footer>
+    
+</main>
+
+<script src="script.js"></script> 
+</body>
+</html>
