@@ -21,6 +21,8 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth; 
+
+    overflow-x: hidden;
 }
 
 a {
@@ -218,7 +220,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('src/image-main.png'); 
+    background-image: url('src/elins1.jpg'); 
     background-size: cover;
     background-position: center;
     filter: brightness(0.7) contrast(1.2); 
@@ -685,7 +687,7 @@ a {
 }
 
 .facility-section.full-image-bg {
-    background-image: url('src/image\ copy.png'); 
+    background-image: url('src/elins4.jpg'); 
     background-size: cover;
     background-position: center center;
     background-attachment: fixed; 
@@ -948,6 +950,7 @@ footer.contact-section {
     padding: 20px 50px; 
     color: var(--text-color-dark);
     z-index: 50;
+    max-height: max-content;
 }
 
 .member-header-content {
@@ -967,6 +970,35 @@ footer.contact-section {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.category-divider-wrapper {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    color: var(--text-color-light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-divider {
+    font-family: var(--font-family-display);
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.category-subtitle {
+    font-size: 0.9em;
+    opacity: 0.9;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 /* --- MEMBER HERO SECTION --- */
@@ -1104,7 +1136,7 @@ footer.contact-section {
 }
 
 .member-details-expand.is-open {
-    max-height: 700px; 
+    max-height: 1000px; 
     padding: 20px 25px; 
     border-top: 1px solid #f0f0f0; 
 }
@@ -1447,6 +1479,13 @@ footer.contact-section {
     .contact-form-block {
         order: -1;
     }
+    .member-header {
+        padding: 20px 50px;
+    }
+    .member-title {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
     .member-focus-desktop {
         display: none;
     }
@@ -1484,14 +1523,42 @@ footer.contact-section {
     }
 }
 
+@media (max-width: 719px) {
+    .member-header {
+        padding: 40px 15px;
+    }
+    .member-title {
+        font-size: 1.7em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
+
 @media (max-width: 600px) {
     .main-header {
         padding: 15px 20px;
+    }
+    .lab-members-avatars img {
+        margin-left: -5px; 
+        width: 25px;
+        height: 25px;
+    }
+    .lab-members-avatars img:first-child {
+        margin-left: 0;
     }
     .user-actions {
         .location-text {
             display: none;
         }
+    }
+    .container,
+    .main-header,
+    .award-hero {
+        padding-left: 10px !important; 
+        padding-right: 10px !important;
+    }
+    .main-content * {
+        max-width: 100%;
     }
     .award-hero {
         padding: 80px 20px 40px 20px;
@@ -1549,13 +1616,6 @@ footer.contact-section {
     }
     .facility-content-wrapper .section-title {
         font-size: 3em;
-    }
-    .member-header {
-        padding: 20px 50px;
-    }
-    .member-title {
-        font-size: 2em;
-        letter-spacing: 1px;
     }
     .minimal-back-btn {
         gap: 0;
@@ -1640,10 +1700,21 @@ footer.contact-section {
     .main-header {
         padding: 15px 30px;
     }
+    .lab-members-avatars img {
+        margin-left: -5px; 
+        width: 25px;
+        height: 25px;
+    }
     .user-actions {
         .location-text {
             display: none;
         }
+    }
+    .container,
+    .main-header,
+    .award-hero {
+        padding-left: 10px !important; 
+        padding-right: 10px !important;
     }
     .award-hero {
         padding: 80px 10px 30px 10px;
@@ -1703,7 +1774,7 @@ footer.contact-section {
         font-size: 3em;
     }
     .member-header {
-        padding: 30px 20px;
+        padding: 50px 20px;
         border-bottom: 5px solid var(--primary-color);
     }
     .member-title {
@@ -1796,5 +1867,11 @@ footer.contact-section {
         border-bottom: none;
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+}
+
+@media (max-width: 344px) {
+    .award-info-header {
+        padding-top: 50px; 
     }
 }
